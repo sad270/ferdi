@@ -65,7 +65,7 @@ npm -v
 6.14.13
 ```
 
-_Note:_ Ferdi is compatible with [nvm](https://github.com/nvm-sh/nvm). You can use `nvm` to install the required versions of `node` and `npm`
+_Note:_ You can choose any package manager to manage multiple versions of `node` and `npm`. For eg, [nvm](https://github.com/nvm-sh/nvm) or [asdf](https://github.com/asdf-vm/asdf).
 
 #### Git
 
@@ -134,7 +134,7 @@ Run the following command to install all dependencies, and link sibling modules 
 npx lerna bootstrap
 ```
 
-If you previously ran `npm install`, it sometimes is necessary to delete your `node_modules` folder before running `npx lerna bootstrap`. If you encounter the `gyp: No Xcode or CLT version` error on macOS at this step, please have a look [here](https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d).
+If you previously ran `npm install`, it is sometimes necessary to delete your `node_modules` folder before running `npx lerna bootstrap`. If you encounter the `gyp: No Xcode or CLT version` error on macOS at this step, please have a look [here](https://medium.com/flawless-app-stories/gyp-no-xcode-or-clt-version-detected-macos-catalina-anansewaa-38b536389e8d).
 
 ### Fix native modules to match current electron node version
 
@@ -248,7 +248,7 @@ git pull
 
 ### Update Node.js and npm
 
-If Node.js or/and npm version have changed, don't forget update by with running `nvm install` if you use nvm or by manually update them.
+If node.js and/or npm version have changed, don't forget to update them by running the appropriate command of your chosen package manager.
 
 ### Update dependences
 
