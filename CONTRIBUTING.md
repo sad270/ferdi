@@ -65,6 +65,8 @@ npm -v
 6.14.13
 ```
 
+_Note:_ Ferdi is compatible with [nvm](https://github.com/nvm-sh/nvm). You can use `nvm` to install the required versions of `node` and `npm`
+
 #### Git
 
 The version [2.23.0](https://github.com/git-for-windows/git/releases/tag/v2.23.0.windows.1) for Git is working fine for development. You can then use the console from Git to do the development procedure.
@@ -137,7 +139,7 @@ If you previously ran `npm install`, it sometimes is necessary to delete your `n
 ### Fix native modules to match current electron node version
 
 ```bash
-npm run rebuild
+npm run build
 ```
 
 ### Package recipe repository
@@ -235,3 +237,21 @@ git push
 ```
 
 This will automatically trigger the build, as part of which, a new, draft release will be created [here](https://github.com/getferdi/ferdi/releases/). Once all the assets are uploaded (19 assets in total), publish the release (you will need elevated permissions in GitHub for doing this). The last commit of the `release` branch will be tagged.
+
+## Update
+
+### Update the code
+
+```bash
+git pull
+```
+
+### Update Node.js and npm
+
+If Node.js or/and npm version have changed, don't forget update by with running `nvm install` if you use nvm or by manually update them.
+
+### Update dependences
+
+```bash
+npx lerna bootstrap
+```
