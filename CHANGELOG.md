@@ -4,7 +4,7 @@
 
 ### Bug Fixes
 
-- Fix macOS black screen when close to systray in fullscreen mode (#1878) 💖 @sad270
+- Fix macOS black screen when closing to systray in fullscreen mode (#1878) 💖 @sad270
 
 # [v5.6.1-nightly.52](https://github.com/getferdi/ferdi/compare/v5.6.1-nightly.51...v5.6.1-nightly.52) (2021-09-07)
 
